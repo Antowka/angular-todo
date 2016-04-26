@@ -1,6 +1,6 @@
 import gulp from 'gulp';
 import less from 'gulp-less';
-import util from 'gulp-util';
+import gutil from 'gulp-util';
 import browserify from 'browserify';
 import source from 'vinyl-source-stream';
 import tsify from 'tsify';
@@ -44,4 +44,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('build', ['browserify', 'less']);
-gulp.task('default', ['build', 'watch']);
+gulp.task('start', ['build', 'watch']);
