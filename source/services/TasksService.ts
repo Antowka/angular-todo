@@ -46,7 +46,7 @@ export class TasksService {
     }
 
     selectTask(task) {
-        this._selectedTaskObserver.next(task);
+       this._selectedTaskObserver.next(task);
     }
 
     removeTask(taskId: string) {
