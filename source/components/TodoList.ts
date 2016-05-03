@@ -8,7 +8,9 @@ import {TodoNew} from "./TodoNew";
     template: `
         <ul class="nav nav-pills nav-stacked">
             <li role="presentation" *ngFor="#task of todos">
-                <a href="#" (click)="selectNewTask(task)">{{task.name}}</a>
+                <a href="#" (click)="selectNewTask(task)">
+                    {{task.name}}
+                </a>
             </li>
         </ul>
         
